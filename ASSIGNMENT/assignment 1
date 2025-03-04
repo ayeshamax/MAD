@@ -1,1 +1,34 @@
+// Defining a string
+let myString = "Hello, JavaScript World!";
 
+// Applying String Methods
+console.log("Original String:", myString);
+console.log("Length:", myString.length);
+console.log("Uppercase:", myString.toUpperCase());
+console.log("Lowercase:", myString.toLowerCase());
+console.log("Substring (0-5):", myString.substring(0, 5));
+console.log("Slice (-6):", myString.slice(-6));
+console.log("Replace 'World' with 'Universe':", myString.replace("World", "Universe"));
+console.log("Includes 'JavaScript'?", myString.includes("JavaScript"));
+console.log("Starts with 'Hello'?", myString.startsWith("Hello"));
+console.log("Ends with 'World!'?", myString.endsWith("World!"));
+console.log("Split into array:", myString.split(" "));
+
+// Defining an array
+let myArray = ["Apple", "Banana", "Cherry", "Date"];
+
+// Applying Array Methods
+console.log("\nOriginal Array:", myArray);
+console.log("Array Length:", myArray.length);
+console.log("Push 'Elderberry':", myArray.push("Elderberry"), myArray);
+console.log("Pop last element:", myArray.pop(), myArray);
+console.log("Shift (remove first element):", myArray.shift(), myArray);
+console.log("Unshift (add 'Apricot' at start):", myArray.unshift("Apricot"), myArray);
+console.log("Join array as string:", myArray.join(" - "));
+console.log("Reverse array:", myArray.reverse());
+console.log("Sort array:", myArray.sort());
+console.log("Check if includes 'Banana':", myArray.includes("Banana"));
+console.log("Find element starting with 'C':", myArray.find(fruit => fruit.startsWith("C")));
+console.log("Filter elements longer than 5 chars:", myArray.filter(fruit => fruit.length > 5));
+console.log("Map array to uppercase:", myArray.map(fruit => fruit.toUpperCase()));
+console.log("Reduce to single string:", myArray.reduce((acc, val) => acc + ", " + val));
